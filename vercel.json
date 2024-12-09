@@ -5,6 +5,9 @@
     ],
     "routes": [
       { "src": "/(.*)", "dest": "src/index.js" }
-    ]
+    ],
+    "scripts": {
+    "build": "prisma generate && next build"
+  }
   }
   

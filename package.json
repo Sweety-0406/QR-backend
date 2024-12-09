@@ -5,6 +5,7 @@
   "description": "",
   "main": "src/index.js",
   "scripts": {
+    "postinstall": "prisma generate",
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon node src/index.js",
     "build": "prisma generate && next build"
