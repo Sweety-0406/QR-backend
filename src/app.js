@@ -12,7 +12,9 @@ app.use(cors({
     credentials: true
 }));
 app.use(bodyParser.json());
-
+app.get('/', (req, res) => {
+    res.send('Hello World!');
+  });
 // Routes
 app.use('/api/auth', authRoutes);
 app.use('/api/menu', menuRoutes);
