@@ -11,10 +11,14 @@ app.use(cors());
 app.use(bodyParser.json());
 
 app.get('/', (req, res) => {
+  try {
     res.send('Hello World!');
-  });
+  } catch (error) {
+    console.log(error)
+  }
+});
 
-  
+
 app.use('/api/auth', authRoutes);
 app.use('/api/menu', menuRoutes);
 app.use('/api/order', orderRoutes);
