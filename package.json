@@ -1,13 +1,13 @@
 {
   "name": "backend",
   "version": "1.0.0",
-   "type": "module",
+  "type": "module",
   "description": "",
   "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon node src/index.js",
-    "build": "echo 'No build needed for backend'"
+    "build": "prisma generate && next build"
   },
   "keywords": [],
   "author": "",
