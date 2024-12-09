@@ -7,7 +7,10 @@ import menuRoutes from "./routes/menuRoutes.js";
 import orderRoutes from "./routes/orderRoutes.js";
 
 const app = express();
-app.use(cors());
+app.use(cors({
+    origin: process.env.FRONTEND_URL,
+    credentials: true
+}));
 app.use(bodyParser.json());
 
 // Routes
